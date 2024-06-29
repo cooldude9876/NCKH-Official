@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NCKH_Official
 {
-    public partial class Form1 : Form
+    public partial class GenerateHW : Form
     {
-        public Form1()
+        public GenerateHW()
         {
             InitializeComponent();
         }
