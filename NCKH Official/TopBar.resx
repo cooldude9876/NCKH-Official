@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GenerateHWButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAeMAAAIECAYAAAAq3kafAAAABGdBTUEAALGPC/xhBQAAmLdJREFUeF7t
         vQecFFXW/r+rpBmYIUiWDCJInCFnBcyrCLrmgDkhiCIZFMy4rmlVTLhGgpIZMowgIuAsii6KL7Ksi6+v
@@ -775,7 +775,7 @@
         QgghhBBCCCGEEEIIIYQQQgghhBBCyprf/Ob/A5RYPLI2n27zAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="WritingButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOoAAADXCAYAAAAUcM09AAAABGdBTUEAALGPC/xhBQAAJoRJREFUeF7t
         XWmUFdW1jiM0kxEM3Si4YkdaBkXCIHZIJAsQogxJlkjiSmKLJgLyHjLIwyXYhkh4QEAQCMoQMimKgkEa
@@ -945,10 +945,10 @@
         zvN9hUKhyHZ84Qv/D+brxPZaEsTPAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="DictionaryButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADZvSURBVHhe7d15
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADZvSURBVHhe7d15
         3G9zvffxbRu2jW2e5zlTxnInt0IdlSiJRCX3IYRI9y1JSgOHTnUyddOMkyRTITOdDlG4Q1TGROZ5ZhvO
         /f7EdWx7f/ba1/X9ftda3+/6vl6Px/Ofc7T3uq7f79r7vX+/9VtrHEW1lLxTdpPD5SS5SK6Tu+UReVT+
         C1V7Sm6Sk2V7mSA5tZEcLdfIg2LP2z/KCbK1zCK5NEn+Wc6U2+QZ8b7nKNvDcr0cI5sKUa/NJe+WQ+QC
@@ -1184,7 +1184,7 @@
         St64cf8f9YhtMy3ACsYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="StudentHomeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAiMVJREFUeF7t
         vQl8Vsd97t/aSGJznH3FbGKJHTtLkzRNs7RNmnRJ4rCJxY7T2y1t/13Sm9gGtIAsm3S/bbq39zbtTdek

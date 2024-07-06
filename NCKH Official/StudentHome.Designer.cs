@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            label2 = new Label();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.ActiveBorder;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 44);
-            panel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -85,17 +77,26 @@
             button3.Text = "LÀM BÀI VIẾT";
             button3.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(112, 73);
+            label2.Name = "label2";
+            label2.Size = new Size(579, 60);
+            label2.TabIndex = 5;
+            label2.Text = "WELCOME TO <APP NAME>";
+            // 
             // StudentHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label1);
-            Controls.Add(panel1);
             Name = "StudentHome";
             Text = "StudentHome";
             Load += StudentHome_Load;
@@ -104,11 +105,10 @@
         }
 
         #endregion
-
-        private Panel panel1;
         private Label label1;
         private Button button1;
         private Button button2;
         private Button button3;
+        private Label label2;
     }
 }

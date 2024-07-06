@@ -15,7 +15,7 @@ namespace NCKH_Official
         public StudentHome()
         {
             InitializeComponent();
-            UserControl1 userControl1 = new UserControl1();
+            TopBar userControl1 = new TopBar();
             this.Controls.Add(userControl1);
             userControl1.Location = new Point(0, 0);
         }
