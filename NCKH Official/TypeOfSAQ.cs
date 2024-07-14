@@ -21,7 +21,7 @@ namespace NCKH_Official
         }
 
 
-
+        decimal totalSAQ = 0;
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (wordFormationBox.Checked)
@@ -32,7 +32,7 @@ namespace NCKH_Official
             {
                 numberOfWordFormation.Visible = false;
             }
-            decimal totalSAQ = 0;
+            
             if (wordFormationBox.Checked && rearrangeBox.Checked && sentenceRewriteBox.Checked)
             {
                 totalSAQ = numberOfWordFormation.Value + numberOfRearrange.Value + numberOfSentenceRewrite.Value;
@@ -79,7 +79,7 @@ namespace NCKH_Official
             {
                 numberOfRearrange.Visible = false;
             }
-            decimal totalSAQ = 0;
+            
             if (wordFormationBox.Checked && rearrangeBox.Checked && sentenceRewriteBox.Checked)
             {
                 totalSAQ = numberOfWordFormation.Value + numberOfRearrange.Value + numberOfSentenceRewrite.Value;
@@ -126,7 +126,7 @@ namespace NCKH_Official
             {
                 numberOfSentenceRewrite.Visible = false;
             }
-            decimal totalSAQ = 0;
+            
             if (wordFormationBox.Checked && rearrangeBox.Checked && sentenceRewriteBox.Checked)
             {
                 totalSAQ = numberOfWordFormation.Value + numberOfRearrange.Value + numberOfSentenceRewrite.Value;
@@ -164,7 +164,7 @@ namespace NCKH_Official
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            decimal totalSAQ = 0;
+            
             if (wordFormationBox.Checked && rearrangeBox.Checked && sentenceRewriteBox.Checked)
             {
                 totalSAQ = numberOfWordFormation.Value + numberOfRearrange.Value + numberOfSentenceRewrite.Value;
@@ -203,7 +203,7 @@ namespace NCKH_Official
 
         private void numberOfRearrange_ValueChanged(object sender, EventArgs e)
         {
-            decimal totalSAQ = 0;
+            
             if (wordFormationBox.Checked && rearrangeBox.Checked && sentenceRewriteBox.Checked)
             {
                 totalSAQ = numberOfWordFormation.Value + numberOfRearrange.Value + numberOfSentenceRewrite.Value;
@@ -242,7 +242,7 @@ namespace NCKH_Official
 
         private void numberOfSentenceRewrite_ValueChanged(object sender, EventArgs e)
         {
-            decimal totalSAQ = 0;
+            
             if (wordFormationBox.Checked && rearrangeBox.Checked && sentenceRewriteBox.Checked)
             {
                 totalSAQ = numberOfWordFormation.Value + numberOfRearrange.Value + numberOfSentenceRewrite.Value;
@@ -277,6 +277,34 @@ namespace NCKH_Official
             {
                 parentForm.FindSumSAQ(totalSAQ);
             }
+        }
+        public bool isWordFormationChecked
+        {
+            get { return wordFormationBox.Checked; }
+        }
+        public bool isRearrangeChecked
+        {
+            get { return rearrangeBox.Checked; }
+        }
+        public bool isSentenceRewriteChecked
+        {
+            get { return sentenceRewriteBox.Checked; }
+        }
+        public int SAQCount
+        {
+            get { return Convert.ToInt32(totalSAQ); }
+        }
+        public int WordFormationCount
+        {
+            get { return Convert.ToInt32(numberOfWordFormation.Value); }
+        }
+        public int RearrangeCount
+        {
+            get { return Convert.ToInt32(numberOfRearrange.Value); }
+        }
+        public int SentenceRewriteCount
+        {
+            get { return Convert.ToInt32(numberOfSentenceRewrite.Value); }
         }
     }
 }

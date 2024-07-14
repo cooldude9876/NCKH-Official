@@ -42,5 +42,12 @@ namespace NCKH_Official
             generateHW.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dictionary dictionary = new Dictionary();
+            dictionary.Show();
+            this.Hide();
+        }
     }
 }

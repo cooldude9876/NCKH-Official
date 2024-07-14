@@ -20,7 +20,7 @@ namespace NCKH_Official
             numberOfPronunciation.Visible = false;
             numberOfStressSyllable.Visible = false;
         }
-
+        decimal totalMCQ = 0;
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (fillInTheBlankBox.Checked)
@@ -32,7 +32,7 @@ namespace NCKH_Official
                 numberOfFITB.Visible = false;
             }
 
-            decimal totalMCQ = 0;
+            
             if (fillInTheBlankBox.Checked && pronunciationBox.Checked && stressSyllableBox.Checked)
             {
                 totalMCQ = numberOfFITB.Value + numberOfPronunciation.Value + numberOfStressSyllable.Value;
@@ -79,7 +79,7 @@ namespace NCKH_Official
                 numberOfPronunciation.Visible = false;
             }
 
-            decimal totalMCQ = 0;
+            
             if (fillInTheBlankBox.Checked && pronunciationBox.Checked && stressSyllableBox.Checked)
             {
                 totalMCQ = numberOfFITB.Value + numberOfPronunciation.Value + numberOfStressSyllable.Value;
@@ -126,7 +126,7 @@ namespace NCKH_Official
                 numberOfStressSyllable.Visible = false;
             }
 
-            decimal totalMCQ = 0;
+            
             if (fillInTheBlankBox.Checked && pronunciationBox.Checked && stressSyllableBox.Checked)
             {
                 totalMCQ = numberOfFITB.Value + numberOfPronunciation.Value + numberOfStressSyllable.Value;
@@ -165,7 +165,7 @@ namespace NCKH_Official
 
         private void numberOfFITB_ValueChanged(object sender, EventArgs e)
         {
-            decimal totalMCQ = 0;
+            
             if (fillInTheBlankBox.Checked && pronunciationBox.Checked && stressSyllableBox.Checked)
             {
                 totalMCQ = numberOfFITB.Value + numberOfPronunciation.Value + numberOfStressSyllable.Value;
@@ -203,10 +203,10 @@ namespace NCKH_Official
 
 
         }
-
+        
         private void numberOfPronunciation_ValueChanged(object sender, EventArgs e)
         {
-            decimal totalMCQ = 0;
+            
             if (fillInTheBlankBox.Checked && pronunciationBox.Checked && stressSyllableBox.Checked)
             {
                 totalMCQ = numberOfFITB.Value + numberOfPronunciation.Value + numberOfStressSyllable.Value;
@@ -244,7 +244,7 @@ namespace NCKH_Official
 
         private void numberOfStressSyllable_ValueChanged(object sender, EventArgs e)
         {
-            decimal totalMCQ = 0;
+            
             if (fillInTheBlankBox.Checked && pronunciationBox.Checked && stressSyllableBox.Checked)
             {
                 totalMCQ = numberOfFITB.Value + numberOfPronunciation.Value + numberOfStressSyllable.Value;
@@ -278,6 +278,34 @@ namespace NCKH_Official
             {
                 parentForm.FindSumMCQ(totalMCQ);
             }
+        }
+        public bool isFITBChecked
+        {
+            get { return fillInTheBlankBox.Checked; }
+        }
+        public bool isPronunciationChecked
+        {
+            get { return pronunciationBox.Checked; }
+        }
+        public bool isStressSyllableChecked
+        {
+            get { return stressSyllableBox.Checked; }
+        }
+        public int MCQCount
+        {
+            get { return Convert.ToInt32(totalMCQ); }
+        }
+        public int FITBCount
+        {
+            get { return Convert.ToInt32(numberOfFITB.Value); }
+        }
+        public int PronunciationCount
+        {
+            get { return Convert.ToInt32(numberOfPronunciation.Value); }
+        }
+        public int StressSyllableCount
+        {
+            get { return Convert.ToInt32(numberOfStressSyllable.Value); }
         }
     }
 }

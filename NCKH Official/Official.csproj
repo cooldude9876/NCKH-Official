@@ -14,19 +14,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Entities">
-      <HintPath>..\..\Entities\Entities\bin\Debug\Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="NCKH Function">
-      <HintPath>..\..\NCKH Function\NCKH Function\bin\Debug\NCKH Function.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Entities\Entities\Entities.csproj" />
+    <ProjectReference Include="..\..\NCKH Function\NCKH Function\Functions.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MCQSpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="SAQSpace.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 
