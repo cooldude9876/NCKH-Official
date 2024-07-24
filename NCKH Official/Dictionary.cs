@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace NCKH_Official
 {
-    public partial class Form1 : Form
+    public partial class Dictionary : Form
     {
-        public Form1()
+        public Dictionary()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

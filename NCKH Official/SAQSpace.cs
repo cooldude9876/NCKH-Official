@@ -8,13 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NCKH_Official
+namespace NCKH_Function
 {
-    public partial class Form1 : Form
+    public partial class SAQSpace : UserControl
     {
-        public Form1()
+        public SAQSpace()
         {
             InitializeComponent();
+        }
+        public void SetUpQuestion (string question, int i)
+        {
+            label1.Text = $"Question {i} : {question}";
         }
     }
 }

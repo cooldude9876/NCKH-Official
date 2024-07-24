@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NCKH_Official
 {
-    public partial class Form1 : Form
+    public partial class TypeOfRQ : UserControl
     {
-        public Form1()
+        public TypeOfRQ()
         {
             InitializeComponent();
         }
