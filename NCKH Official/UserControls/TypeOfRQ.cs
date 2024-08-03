@@ -16,5 +16,13 @@ namespace NCKH_Official
         {
             InitializeComponent();
         }
+        public bool IsMainIdeaCheckBoxChecked
+        {
+            get { return mainIdeaCheckBox.Checked; }
+        }
+        public bool IsTrueFalseCheckBoxChecked
+        {
+            get { return trueFalseCheckBox.Checked; }
+        }
     }
 }

@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="MCQSpace.cs">
+    <Compile Update="UserControls\MCQSpace.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -27,7 +27,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="SAQSpace.cs">
+    <Compile Update="UserControls\SAQSpace.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
