@@ -8,21 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NCKH_Official
+namespace NCKH_Official.UserControls
 {
-    public partial class Dictionary : Form
+    public partial class PassageSpace : UserControl
     {
-        public Dictionary()
+        public PassageSpace(string p)
         {
             InitializeComponent();
+            passageLabel.Text = p;
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void PassageSpace_Load(object sender, EventArgs e)
         {
 
         }

@@ -1,6 +1,6 @@
-﻿namespace NCKH_Function
+﻿namespace NCKH_Official.Forms
 {
-    partial class SAQSpace
+    partial class QuestionProgress
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,30 +29,46 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            buttonPanel = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(15, 10);
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(24, 0);
             label1.Name = "label1";
-            label1.Size = new Size(500, 51);
+            label1.Size = new Size(138, 41);
             label1.TabIndex = 0;
-            label1.Text = "Question :";
+            label1.Text = "<Type> :";
             // 
-            // SAQSpace
+            // buttonPanel
+            // 
+            buttonPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            buttonPanel.Location = new Point(24, 54);
+            buttonPanel.Name = "buttonPanel";
+            buttonPanel.Size = new Size(352, 198);
+            buttonPanel.TabIndex = 1;
+            // 
+            // QuestionProgress
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = SystemColors.ControlLightLight;
+            Controls.Add(buttonPanel);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "SAQSpace";
-            Size = new Size(535, 72);
+            MinimumSize = new Size(400, 0);
+            Name = "QuestionProgress";
+            Size = new Size(400, 271);
+            Load += MCProgress_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private Label label1;
+        private FlowLayoutPanel buttonPanel;
     }
 }
